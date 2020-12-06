@@ -1,0 +1,38 @@
+@font-face{
+    font-family: 'Spectrum';
+    src: url('/font/Spectrum.ttf') format('truetype');
+    src: url('font/Spectrum.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html{
+    font-family: 'Oswald', sans-serif;
+  
+}
+.spectrum{
+    font-family: 'Spectrum';
+    letter-spacing: 2px;
+}
+.navbar{
+    background-color: #2d2d30;
+    opacity: 0.9;
+}
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+.dropdown-menu li a {
+    color: #000 !important;
+}
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
