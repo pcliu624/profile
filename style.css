@@ -19,7 +19,14 @@ html{
 .navbar-nav li a:hover {
     color: #fff !important;
 }
-
+.navbar-nav{
+    letter-spacing: 3px;
+    padding: 0 10px 0 10px;
+}
+.navbar h4{
+    letter-spacing: 3px;
+    padding: 0 10px 0 10px;
+}
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
