@@ -101,6 +101,7 @@ h1{
       letter-spacing: 2px;
       text-shadow: .1rem .1rem .8rem whitesmoke;
       font-family: 'Spectrum';
+      
   }
   .caption h3{
       font-size:3rem;
@@ -109,3 +110,154 @@ h1{
       letter-spacing: 4px;
       padding-bottom: 20px;
   }
+  .caption .btn-lg {
+      border-width: medium;
+      border-radius: 0;
+      font-size:1.6rem ;
+      padding: .5rem 1.3rem;
+      margin-top: 4rem;
+  }
+  #abme .col-8{
+     background-color:#454545 ;
+     height: 250px;
+     
+  }
+  #abme h3{
+      font-size: 2rem;
+      color: black;
+      letter-spacing: 2px;
+      padding-top: 1rem;
+      font-weight: 600;
+  }
+#abme img{
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height:70%;
+    opacity: 0.8;   
+    border-radius: .9rem;
+    border-width: .4rem;
+    border-inline-start-color:#314770 !important;
+    border-inline-end-color: #165adb !important;
+    border-color:#2b57ab ;
+}#abme h5{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+#abme h4{
+    font-size:1.5rem;
+    letter-spacing: 2px;
+}
+
+/*timeline*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ #exp .container {
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+   
+  }
+ #exp .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+ #exp .timeline ul {
+    list-style: none;
+  }
+ #exp .timeline ul li {
+    padding: 20px;
+    background-color:whitesmoke;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+ #exp .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+#exp  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+ #exp .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+ #exp .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 768px) {
+ #exp  .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+ #exp   .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+  #exp  .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+#exp    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+#exp    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+#exp    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+#exp    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+#exp    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+    }
+#exp    .timeline ul li:hover::before {
+      background-color: #24d6d0;
+    }
+  }
+#exp h5{
+    color:black;
+    letter-spacing: 1px;
+}
+  
