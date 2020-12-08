@@ -4,25 +4,33 @@
     src: url('font/Spectrum.otf') format('opentype');
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-html{
+body{
     font-family: 'Oswald', sans-serif;
-  
+    overflow-x: hidden;
 }
 .spectrum{
     font-family: 'Spectrum';
     letter-spacing: 2px;
 }
+h1{
+    letter-spacing: 3px;
+    padding: 0 10px 0 10px;
+}
 .navbar{
-    background-color: #2d2d30;
-    opacity: 0.9;
+    /*background-color: #2d2d30;*/
+    opacity: 0.9px;
 }
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
+
 .navbar-nav{
     letter-spacing: 3px;
     padding: 0 10px 0 10px;
 }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color: #24d6d0 !important;
+}
+
 .navbar h4{
     letter-spacing: 3px;
     padding: 0 10px 0 10px;
@@ -40,3 +48,64 @@ html{
 .dropdown-menu li a:hover {
     background-color: red !important;
 }
+
+.carousel .carousel-item {
+    height: 350px;
+  }
+  .carousel .carousel-item img {
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+  }
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    background-image: url(image/2LO\ Vanilla\ Cream\ 1.jpg);
+  }
+  .caption{
+      width: 100%;
+      max-width: 100%;
+      position: absolute;
+      top:38%;
+      z-index: 1;
+      
+  }
+  .caption h1{
+      font-size: 4.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-shadow: .1rem .1rem .8rem whitesmoke;
+      font-family: 'Spectrum';
+  }
+  .caption h3{
+      font-size:3rem;
+      font-weight: 700;      
+      text-shadow: .1rem .1rem .8rem whitesmoke;
+      letter-spacing: 4px;
+      padding-bottom: 20px;
+  }
