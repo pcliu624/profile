@@ -162,7 +162,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 80px 0;
    
   }
  #exp .timeline {
@@ -259,5 +259,12 @@ h1{
 #exp h5{
     color:black;
     letter-spacing: 1px;
+}
+#profolio h3{
+  font-size: 2rem;
+      color: black;
+      letter-spacing: 2px;
+      padding-top: 1rem;
+      font-weight: 600;
 }
   

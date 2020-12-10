@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="style.css?version=$lt:?php echo time(); ?&gt;">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
 <title>profiledemo</title>
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -107,16 +109,16 @@
        <div class="col-md-4">
        <p><h4>Front-end:</h4></p>
         <ul class="list-group">
-          <li class="list-group-item list-group-item-action list-group-item-info">HTML</li>
-          <li class="list-group-item list-group-item-action list-group-item-info">CSS</li>
-          <li class="list-group-item list-group-item-action list-group-item-info">Bootstrap</li>
-          <li class="list-group-item list-group-item-action list-group-item-info">Basic Javascript(ES6)</li>
+          <li class="list-group-item list-group-item-action list-group-item-info"><i class="fab fa-html5"></i>HTML</li>
+          <li class="list-group-item list-group-item-action list-group-item-info"><i class="fab fa-css3-alt"></i>CSS</li>
+          <li class="list-group-item list-group-item-action list-group-item-info"><i class="fab fa-bootstrap"></i>Bootstrap</li>
+          <li class="list-group-item list-group-item-action list-group-item-info"><i class="fab fa-js-square"></i>Basic Javascript(ES6)</li>
         </ul>
         </div>
         <div class="col-md-4">
         <p><h4>Back-end:</h4></p>
           <ul class="list-group">
-            <li class="list-group-item list-group-item-action list-group-item-success">PHP</li>
+            <li class="list-group-item list-group-item-action list-group-item-success"><i class="fab fa-php"></i>PHP</li>
             <li class="list-group-item list-group-item-action list-group-item-success">Basic SQL</li>
           </ul>
         </div>
@@ -152,9 +154,9 @@
     
       
        
-         <h3  class="heading text-center">Experience</h3>
-         <div id="exp">
-         <div class="container">
+         <div  class="heading text-center offset"  id="exp">
+           <h3>Experience</h3>         
+         <div class="container">         
           <div class="timeline">
             <ul>
               <li>
@@ -191,7 +193,7 @@
               <div class="container">
                 <img class="card-img-top img-thumbnail" src="image/gui.jpg" alt="#">
                   <div class="card-body">
-                    <h3 class="card-title">Guitar</h3>
+                    <h3 class="card-title">Guitar<i class="fas fa-guitar"></i></h3>
                     <p class="card-text"><h5>I play electric guitar mainly and sometime play acoustic.</p></h5>
                   </div>
                 </div>
@@ -200,7 +202,7 @@
              <div class="container">
               <img class="card-img-top img-thumbnail" src="image/bike.JPG" alt="#">
                    <div class="card-body">
-                     <h3 class="card-title">Motocycle</h3>
+                     <h3 class="card-title">Motorcycle<i class="fas fa-motorcycle"></i></h3>
                      <p class="card-text"><h5>It not just a traspotation to me,</h5><h5>I had traveled around Taiwan in 2020 by riding my bike.</h5></p>
                    </div>
              </div>
@@ -210,7 +212,7 @@
                 <img class="card-img-top img-thumbnail" src="image/pcvscon.jpg" alt="#">
                   <div class="card-body">
                     <h3 class="card-title">Video games</h3>
-                    <p class="card-text"><h5>Some may ask "Console or PC?"</h5><h5>I would say "Why not both!"</h5>
+                    <p class="card-text"><h5>Some may ask "Console<i class="fab fa-playstation"></i> or PC<i class="fas fa-desktop"></i>?"</h5><h5>I would say "Why not both!"</h5>
                   </div>
               </div>
             </div>  
@@ -223,7 +225,40 @@
   </div>
 
   <!--profolio-->
-  <div id="profolio" class="offset">
+  <div id="profolio" class="offset text-center">
+    <h3>Profolio</h3>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="image/2LO Vanilla Cream 1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>My Caption Title (1st Image)</h5>
+                    <p>The whole caption will only show up if the screen is at least medium size.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="image/2LO Vanilla Cream 2.jpg"  alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="image/2LO Vanilla Cream 3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
 
   </div>
 
@@ -235,6 +270,7 @@
   <!--footer-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
 </body>
 </html>  
