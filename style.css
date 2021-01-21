@@ -17,9 +17,12 @@ h1{
     padding: 0 10px 0 10px;
 }
 .navbar{
-    /*background-color: #2d2d30;*/
-    opacity: 0.9px;
+   
+    opacity: 0px;
 }
+/*.bg-black{
+  background-color: #1c1c1c!important;
+}*/
 
 .navbar-nav{
     letter-spacing: 3px;
@@ -30,7 +33,10 @@ h1{
 .navbar-nav .nav-link:hover{
     color: #24d6d0 !important;
 }
-
+.navbar .container-fluid{
+  padding-left: 5rem ;
+  padding-right: 5rem;
+}
 .navbar h4{
     letter-spacing: 3px;
     padding: 0 10px 0 10px;
@@ -91,70 +97,76 @@ h1{
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
     will-change: transform;
-    background-image: url(image/2LO\ Vanilla\ Cream\ 1.jpg);
+    background-image: url(image/landingimg.jfif);
   }
   .caption{
       width: 100%;
       max-width: 100%;
       position: absolute;
-      top:38%;
+      top:35%;
       z-index: 1;
       
   }
   .caption h1{
-      font-size: 4.5rem;
+      font-size: 5.5rem;
       font-weight: 300;
       letter-spacing: 2px;
-      text-shadow: .1rem .1rem .8rem whitesmoke;
+      /*text-shadow: .1rem .1rem .8rem whitesmoke;*/
       font-family: 'Spectrum';
-      
+      color:#BDC0BA;
   }
   .caption h3{
-      font-size:3rem;
+      font-size:3.5rem;
       font-weight: 700;      
-      text-shadow: .1rem .1rem .8rem whitesmoke;
+      text-shadow: .1rem .1rem .5rem#E1A679;
       letter-spacing: 4px;
       padding-bottom: 20px;
+      color:#BDC0BA;
+      
   }
   .caption .btn-lg {
       border-width: medium;
       border-radius: 0;
+      border-color: #BDC0BA;
       font-size:1.6rem ;
       padding: .5rem 1.3rem;
       margin-top: 4rem;
+      color:#BDC0BA;
   }
-  #abme .col-8{
-     background-color:#454545 ;
-     height: 250px;
-     
+  .caption .btn-lg:hover {
+    background-color:#CA7A2C;
+    border-color: #CAAD5F;
   }
-  #abme h3{
-      font-size: 2rem;
-      color: black;
-      letter-spacing: 2px;
-      padding-top: 1rem;
-      font-weight: 600;
-  }
-#abme img{
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height:70%;
-    opacity: 0.8;   
-    border-radius: .9rem;
-    border-width: .4rem;
-    border-inline-start-color:#314770 !important;
-    border-inline-end-color: #165adb !important;
-    border-color:#2b57ab ;
-}#abme h5{
-    font-size: 1rem;
-    letter-spacing: 1px;
+ #fi1{
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+      
+ }
+ #fi2{ 
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+       animation: fadein 4s;
+      
+       
+ }
+ #fi3{
+  webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s; /* Firefox < 16 */
+   -ms-animation: fadein 6s; /* Internet Explorer */
+    -o-animation: fadein 6s; /* Opera < 12.1 */
+       animation: fadein 6s;
+       
+       
+ }
+ @keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 0.95; }
 }
-#abme h4{
-    font-size:1.5rem;
-    letter-spacing: 2px;
-}
-
 /*timeline*/
 * {
     margin: 0;
@@ -274,4 +286,8 @@ h1{
       font-weight: 600;
 }
 
-
+#skill{
+  background:linear-gradient(to top, rgb(12, 12, 12), rgb(45, 45, 45));
+  width: 100%;
+  padding:2rem;
+}
