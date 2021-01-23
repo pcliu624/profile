@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -33,10 +36,9 @@ h2{
 h3{
   color:#FFFFFB;
 }
-.navbar{
-  
 
-    opacity: 0px;
+.navbar{
+   
 }
 
 .navbar-nav{
@@ -44,10 +46,35 @@ h3{
     padding: 0 10px 0 10px;
 }
 
-.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active{
+  color: #FC9F4D !important;
+}
+
 .navbar-nav .nav-link:hover{
     color: #FC9F4D !important;
+}  
+a.middle
+{
+    position: relative;
 }
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 7%;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .navbar .container-fluid{
   padding-left: 19rem ;
   padding-right: 19rem;
@@ -62,6 +89,7 @@ h3{
 .open .dropdown-toggle {
     color: #fff;
     background-color: #555 !important;
+   
 }
 .dropdown-menu li a {
     color: #000 !important;
@@ -69,22 +97,10 @@ h3{
 .dropdown-menu li a:hover {
     background-color: red !important;
 }
-
-.carousel .carousel-item {
-    height: 400px;
-  }
-  .carousel .carousel-item img {
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  .carousel h5{
-    font-size: 1.5rem;
-    color: black;
-    letter-spacing: 3px;
-  }
-
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active{
+   background-color: #FC9F4D!important;
+}
   .landing {
     position: relative;
     width: 100%;
@@ -118,7 +134,7 @@ h3{
       width: 100%;
       max-width: 100%;
       position: absolute;
-      top:35%;
+      top:25%;
       z-index: 1;
       
   }
@@ -193,7 +209,7 @@ h3{
   }
 #exp{
   background:linear-gradient(to left, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
-  padding-top:3rem;
+  padding-top:3.5rem;
 }
  #exp .container {
     width: 100%!important;
@@ -299,18 +315,20 @@ h3{
     letter-spacing: 1px;
 }
 #exp h3{ 
-   font-size: 3rem;
+   font-size: 2.5rem;
    color :#FFFFFB ;
+   letter-spacing: .5rem;
+   padding-top:3.5rem;
 }
 
 #skill{
   background:linear-gradient(to right, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
   width: 100%;
   padding:8rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color:#FFFFFB;
-  letter-spacing: .3rem;
-  font-family: 'Josefin Slab', serif; 
+  letter-spacing: .35rem;
+  font-family: 'Oswald', sans-serif;
 }
 #skill .container{
   padding-top: 3.5rem;
@@ -323,10 +341,11 @@ h3{
   padding-right: .5rem;
 }
 #skill h3{  
-  font-size: 3rem;
+  font-size: 2.5rem;
   color :#FFFFFB ;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
+  letter-spacing: .5rem;
 }
 .progress {
   background: #FCFAF2;
@@ -376,4 +395,57 @@ h3{
 @keyframes hal {
   0% { width: 0; }
   100% { width: 50%; }
+}
+#abme{
+  background:linear-gradient(to left, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
+  width: 100%;
+  padding:8rem;
+}
+#abme h3{
+  letter-spacing: .2rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+#abme h2{
+  text-align: left;
+}
+#abme .container{
+  display: flex;
+  display: -webkit-flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:10rem;
+}
+#abme img{
+  height:auto;
+  width: 400px;
+  border-radius: .3rem;
+  box-shadow: -2.3rem 2rem #0089A7;
+}
+#contact{
+  background:linear-gradient(to right, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+#contact h3{
+  font-size: 2.5rem;
+   color :#FFFFFB ;
+   letter-spacing: .5rem;  
+   text-align: center;
+}
+#contact h5{
+  font-size:.8rem;
+  text-align: center;
+  color:#BDC0BA;
+  letter-spacing: .1rem;
+  padding-bottom: 1.8rem;
+}
+#contact h4{
+  font-size: 1.1rem;
+  color:#FFFFFB;
+  letter-spacing: .1rem;
+}
+#contact .container{
+  padding-top: 3rem;
 }

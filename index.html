@@ -8,16 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
 <title>profiledemo</title>
-
 </head>
-<body data-spy="scroll" data-target="#navbarResponsive">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <div id="home">
-
+    
+    
   </div>
 
     <!---navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top" id="#navbarResponsive">   
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="#navbarResponsive">   
       <div class="container-fluid">                    
         <a class="navbar-brand" href="#"><h4>My profile</h4></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,14 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav md-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link middle" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About me
+                About
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#abme">About me</a>
                 <a class="dropdown-item" href="#skill">Skill</a>
                 <a class="dropdown-item" href="#exp">Experience</a>
                 
@@ -40,13 +41,13 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link middle" href="#contact">Contact</a>
             </li>
           </ul>          
            </div>      
       </div>
     </nav>
-
+    
    
 <!--landing page-->
   <div class="landing">
@@ -59,15 +60,29 @@
 
   <div class="caption text-center" >
     
-    <h3 id="fi1">HI</h3>
-      <h1 id="fi2">I am</h1>
-      <h1 id="fi3">Raymond Liu</h1>
+    <h1 id="fi1">I'm a web</h1>
+      <h1 id="fi2">developer from</h1>
+      <h1 id="fi3">HongKong</h1>
      <a class="btn btn-outline-dark btn-lg" href="#abme">find out more</a>
     
   </div>
   
  <!--aboutme-->
-  <div id="abme" class="offset">
+  <div id="abme" class="container-fluid">
+   <div class="container">
+     
+   
+    <div>
+    
+      <img src="./image/gui.jpg">
+    </div>
+    <div>
+      <h3>About me</h3>
+      <h2>A web developer from HongKong,<br> seeking a full time job of front-end developer.</h2>
+    </div>
+  </div>
+  
+  
   </div>
     <!--skills-->
      <div class="container-fluid" id="skill">
@@ -76,23 +91,23 @@
        <div class="container">
         <div>
           <ul>
-            <li>HTML5</li>
+            <li><i class="fab fa-html5"></i>HTML5</li>
             <div class="progress">
              <div class="progress-adv"></div>
             </div>
-            <li>CSS3</li>
+            <li><i class="fab fa-css3-alt"></i>CSS3</li>
             <div class="progress">
              <div class="progress-adv"></div>
             </div>
-            <li>Bootstrap</li>
+            <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
             <div class="progress">
              <div class="progress-adv"></div>
             </div>
-            <li>Javascript ES6</li>
+            <li><i class="fab fa-js-square"></i>Javascript ES6</li>
             <div class="progress">
              <div class="progress-hal"></div>
             </div>
-            <li>React</li>
+            <li><i class="fab fa-react"></i>React</li>
             <div class="progress">
              <div class="progress-jun"></div>
             </div>
@@ -100,7 +115,7 @@
         </div>
        <div>
          <ul>
-           <li>PHP</li>
+           <li><i class="fab fa-php"></i>PHP</li>
            <div class="progress">
             <div class="progress-jun"></div>
            </div>
@@ -126,7 +141,7 @@
             <ul>
               <li>
                 <div class="timeline-content">
-                  <h3 class="date">2020</h3>
+                  <h1 class="date">2020</h1>
             <p><h5>Graduated from National Chin-yi University of Technology, department of Computer science and Information Engineering.</h5></p>
                 </div>
               </li>
@@ -186,11 +201,19 @@
   
 
   <!--contact-->
-  <div id="contact" class="offset">
-
-  </div>
-  </div>
+  <div id="contact" class="container-fluid">
+    
+    <h5>CONTACT</h5>
+    <h3>Contact Me</h3>
+    <div class="container">
+      <h4><i class="fas fa-envelope"></i>email:liugodlol@gmail.com</h4>
+      <h4><i class="fab fa-github-square"></i>github:<a href="https://github.com/pcliu624">https://github.com/pcliu624</h4>
+   </div>
+   </div>
+  
+  
   <!--footer-->
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
