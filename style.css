@@ -4,9 +4,14 @@
     src: url('font/Spectrum.otf') format('opentype');
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 body{
     font-family: 'Oswald', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 .spectrum{
     font-family: 'Spectrum';
@@ -16,13 +21,23 @@ h1{
     letter-spacing: 3px;
     padding: 0 10px 0 10px;
 }
+h2{
+   font-size: 1.25rem !important;
+   letter-spacing: 1.5px;
+   opacity: .5;
+   color:#BDC0BA;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+
+}
+h3{
+  color:#FFFFFB;
+}
 .navbar{
-   
+  
+
     opacity: 0px;
 }
-/*.bg-black{
-  background-color: #1c1c1c!important;
-}*/
 
 .navbar-nav{
     letter-spacing: 3px;
@@ -31,11 +46,11 @@ h1{
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover{
-    color: #24d6d0 !important;
+    color: #FC9F4D !important;
 }
 .navbar .container-fluid{
-  padding-left: 5rem ;
-  padding-right: 5rem;
+  padding-left: 19rem ;
+  padding-right: 19rem;
 }
 .navbar h4{
     letter-spacing: 3px;
@@ -113,25 +128,28 @@ h1{
       letter-spacing: 2px;
       /*text-shadow: .1rem .1rem .8rem whitesmoke;*/
       font-family: 'Spectrum';
-      color:#BDC0BA;
+      color:#FFFFFB;
   }
   .caption h3{
       font-size:3.5rem;
-      font-weight: 700;      
+      font-weight: 600;      
       text-shadow: .1rem .1rem .5rem#E1A679;
       letter-spacing: 4px;
       padding-bottom: 20px;
-      color:#BDC0BA;
-      
+      color:#FFFFFB;
+      font-family: 'Josefin Slab', serif;
+
   }
   .caption .btn-lg {
       border-width: medium;
       border-radius: 0;
-      border-color: #BDC0BA;
-      font-size:1.6rem ;
-      padding: .5rem 1.3rem;
+      border-color:#FFFFFB;
+      font-size:1rem ;
+      padding: .5rem 1rem;
       margin-top: 4rem;
-      color:#BDC0BA;
+      color:#FFFFFB;
+      font-family: 'Josefin Slab', serif;
+      letter-spacing: .3rem;
   }
   .caption .btn-lg:hover {
     background-color:#CA7A2C;
@@ -173,15 +191,17 @@ h1{
     padding: 0;
     box-sizing: border-box;
   }
-  
+#exp{
+  background:linear-gradient(to left, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
+  padding-top:3rem;
+}
  #exp .container {
-    
-    width: 100%;
+    width: 100%!important;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px 0;
-   
+    
   }
  #exp .timeline {
     width: 80%;
@@ -196,7 +216,7 @@ h1{
   }
  #exp .timeline ul li {
     padding: 20px;
-    background-color:whitesmoke;
+    background-color:#E8B647;
     color: white;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -271,23 +291,89 @@ h1{
       top: -30px;
     }
 #exp    .timeline ul li:hover::before {
-      background-color: #24d6d0;
+      background-color:#CB4042;
     }
   }
 #exp h5{
     color:black;
     letter-spacing: 1px;
 }
-#profolio h3{
-  font-size: 2rem;
-      color: black;
-      letter-spacing: 2px;
-      padding-top: 1rem;
-      font-weight: 600;
+#exp h3{ 
+   font-size: 3rem;
+   color :#FFFFFB ;
 }
 
 #skill{
-  background:linear-gradient(to top, rgb(12, 12, 12), rgb(45, 45, 45));
+  background:linear-gradient(to right, rgb(12, 12, 12),rgb(28,28,28), rgb(45, 45, 45)), rgb(55,55,55);
   width: 100%;
-  padding:2rem;
+  padding:8rem;
+  font-size: 1.7rem;
+  color:#FFFFFB;
+  letter-spacing: .3rem;
+  font-family: 'Josefin Slab', serif; 
+}
+#skill .container{
+  padding-top: 3.5rem;
+  display: flex;
+  display: -webkit-flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+#skill h3{  
+  font-size: 3rem;
+  color :#FFFFFB ;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+.progress {
+  background: #FCFAF2;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 26rem;
+}
+
+.progress-adv {
+  animation: adv 3s normal forwards;
+  box-shadow: 0 10px 40px -10p#FC9F4D;
+  border-radius: 100px;
+  background:#FC9F4D;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes adv {
+  0% { width: 0; }
+  100% { width: 68%; }
+}
+.progress-jun {
+  animation: jun 3s normal forwards;
+  box-shadow: 0 10px 40px -10px#FC9F4D;
+  border-radius: 100px;
+  background:#FC9F4D;
+  height: 30px;
+  width: 0;
+}
+@keyframes jun {
+  0% { width: 0; }
+  100% { width: 33%; }
+}
+.progress-hal {
+  animation: hal 3s normal forwards;
+  box-shadow: 0 10px 40px -10px#FC9F4D;
+  border-radius: 100px;
+  background:#FC9F4D;
+  height: 30px;
+  width: 0;
+}
+@keyframes hal {
+  0% { width: 0; }
+  100% { width: 50%; }
 }
